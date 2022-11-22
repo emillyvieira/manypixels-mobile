@@ -25,12 +25,12 @@ const HomeScreen = ({ navigation }) => {
   return ( 
     <ScrollView>
         <View >
-            <Image style={styles.all} source={require('./img/fundo.png')}/>
+            <Image style={styles.all} source={require('./img/fundo.gif')}/>
         </View>
 
         <View style={styles.body}>                
             <Image style={styles.title} source={require('./img/title2.png')}/>
-            <Text style={styles.subtitle}>SONS</Text>
+            <Text style={styles.rodape}>CATEGORIAS</Text>
             <View>
               <View style={styles.alg}>
                   <Image style={styles.image} source={require('./img/animais/gato.png')}/>
@@ -54,7 +54,7 @@ const HomeScreen = ({ navigation }) => {
                   <Button style={styles.button} title="Objetos" onPress={() =>navigation.navigate('Objetos')}/>
               </View>
           </View>
-          <Text style={styles.rodape}>Desenvolvido por ManySounds</Text>
+          <Text style={styles.rodape}>Desenvolvido por ManyPixels</Text>
         </View>
         
     </ScrollView>
@@ -73,7 +73,7 @@ const Animais = ({ navigation }) => {
     return (
       <ScrollView>
       <View >
-          <Image style={stylesAni.back} source={require('./img/animais/fundo5.jpg')}/>
+          <Image style={stylesAni.back} source={require('./img/animais/fundo.gif')}/>
       </View>
 
       <View style={stylesAni.pagAnimais}>                
@@ -85,8 +85,8 @@ const Animais = ({ navigation }) => {
             </View>
 
             <View style={styles.alg}>
-                <Button style={styles.button} title="Gato" onPress={() =>navigation.navigate('Gato')}/>
-                <Button style={styles.button} title="Galo" onPress={() =>navigation.navigate('Galo')}/>
+                <Button style={styles.button} title="Gato"/>
+                <Button style={styles.button} title="Galo"/>
             </View>
           </View>
          
@@ -97,8 +97,8 @@ const Animais = ({ navigation }) => {
             </View>
 
             <View style={styles.alg}>
-                <Button style={styles.button} title="Cavalo" onPress={() =>navigation.navigate('Natureza')}/>
-                <Button style={styles.button} title="Boi" onPress={() =>navigation.navigate('Objetos')}/>
+                <Button style={styles.button} title="Cavalo"/>
+                <Button style={styles.button} title="Boi"/>
             </View>
         </View>
 
@@ -109,11 +109,11 @@ const Animais = ({ navigation }) => {
             </View>
 
             <View style={styles.alg}>
-                <Button style={styles.button} title="Cachorro" onPress={() =>navigation.navigate('Natureza')}/>
-                <Button style={styles.button} title="Porco" onPress={() =>navigation.navigate('Objetos')}/>
+                <Button style={styles.button} title="Cachorro"/>
+                <Button style={styles.button} title="Porco"/>
             </View>
         </View>
-        <Text style={styles.rodape}>Desenvolvido por ManySounds</Text>
+        <Text style={styles.rodape}>Desenvolvido por ManyPixels</Text>
       </View>
       
   </ScrollView>
@@ -124,7 +124,7 @@ const Bateria = ({ navigation }) => {
   return (
     <ScrollView>
       <View >
-          <Image style={stylesAni.back} source={require('./img/bateria/fundo8.webp')}/>
+          <Image style={stylesAni.back} source={require('./img/bateria/fundo8.gif')}/>
       </View>
 
       <View style={stylesAni.pagAnimais}>                
@@ -136,8 +136,8 @@ const Bateria = ({ navigation }) => {
             </View>
 
             <View style={styles.alg}>
-                <Button style={styles.button} title="play" onPress={() =>navigation.navigate('Gato')}/>
-                <Button style={styles.button} title="play" onPress={() =>navigation.navigate('Galo')}/>
+                <Button style={styles.button} title="tons"/>
+                <Button style={styles.button} title="chimbal"/>
             </View>
           </View>
         
@@ -148,8 +148,8 @@ const Bateria = ({ navigation }) => {
             </View>
 
             <View style={styles.alg}>
-                <Button style={styles.button} title="play" onPress={() =>navigation.navigate('Natureza')}/>
-                <Button style={styles.button} title="play" onPress={() =>navigation.navigate('Objetos')}/>
+                <Button style={styles.button} title="prato"/>
+                <Button style={styles.button} title="surdo"/>
             </View>
         </View>
 
@@ -160,11 +160,11 @@ const Bateria = ({ navigation }) => {
             </View>
 
             <View style={styles.alg}>
-                <Button style={styles.button} title="play" onPress={() =>navigation.navigate('Natureza')}/>
-                <Button style={styles.button} title="play" onPress={() =>navigation.navigate('Objetos')}/>
+                <Button style={styles.button} title="caixa"/>
+                <Button style={styles.button} title="bumbo"/>
             </View>
         </View>
-        <Text style={styles.rodape}>Desenvolvido por ManySounds</Text>
+        <Text style={styles.rodape}>Desenvolvido por ManyPixels</Text>
       </View>
     </ScrollView>
     );
@@ -174,7 +174,7 @@ const Natureza = ({ navigation }) => {
   return (
     <ScrollView>
       <View >
-          <Image style={stylesAni.back} source={require('./img/natureza/fundo3.png')}/>
+          <Image style={stylesAni.back} source={require('./img/natureza/fundo3.jpg')}/>
       </View>
 
       <View style={stylesAni.pagAnimais}>                
@@ -186,8 +186,8 @@ const Natureza = ({ navigation }) => {
             </View>
 
             <View style={styles.alg}>
-                <Button style={styles.button} title="floresta" onPress={() =>navigation.navigate('Gato')}/>
-                <Button style={styles.button} title="fogo" onPress={() =>navigation.navigate('Galo')}/>
+                <Button style={styles.button} title="floresta"/>
+                <Button style={styles.button} title="fogo"/>
             </View>
           </View>
         
@@ -198,8 +198,8 @@ const Natureza = ({ navigation }) => {
             </View>
 
             <View style={styles.alg}>
-                <Button style={styles.button} title="trovão" onPress={() =>navigation.navigate('Natureza')}/>
-                <Button style={styles.button} title="ondas" onPress={() =>navigation.navigate('Objetos')}/>
+                <Button style={styles.button} title="trovão"/>
+                <Button style={styles.button} title="ondas"/>
             </View>
         </View>
 
@@ -210,11 +210,11 @@ const Natureza = ({ navigation }) => {
             </View>
 
             <View style={styles.alg}>
-                <Button style={styles.button} title="chuva" onPress={() =>navigation.navigate('Natureza')}/>
-                <Button style={styles.button} title="nevasca" onPress={() =>navigation.navigate('Objetos')}/>
+                <Button style={styles.button} title="chuva"/>
+                <Button style={styles.button} title="nevasca"/>
             </View>
         </View>
-        <Text style={styles.rodape}>Desenvolvido por ManySounds</Text>
+        <Text style={styles.rodape}>Desenvolvido por ManyPixels</Text>
       </View>
     </ScrollView>
     );
@@ -236,11 +236,10 @@ const Objetos = ({ navigation }) => {
             </View>
 
             <View style={styles.alg}>
-                <Button style={styles.button} title="bike" onPress={() =>navigation.navigate('Gato')}/>
-                <Button style={styles.button} title="sino" onPress={() =>navigation.navigate('Galo')}/>
+                <Button style={styles.button} title="bike"/>
+                <Button style={styles.button} title="sino"/>
             </View>
           </View>
-        
         <View>
             <View style={styles.alg}>
                 <Image style={styles.image} source={require('./img/objetos/camera.png')}/>
@@ -248,11 +247,10 @@ const Objetos = ({ navigation }) => {
             </View>
 
             <View style={styles.alg}>
-                <Button style={styles.button} title="câmera" onPress={() =>navigation.navigate('Natureza')}/>
-                <Button style={styles.button} title="cucco" onPress={() =>navigation.navigate('Objetos')}/>
+                <Button style={styles.button} title="câmera"/>
+                <Button style={styles.button} title="cucco"/>
             </View>
         </View>
-
         <View>
             <View style={styles.alg}>
                 <Image style={styles.image} source={require('./img/objetos/buzina.png')}/>
@@ -260,11 +258,11 @@ const Objetos = ({ navigation }) => {
             </View>
 
             <View style={styles.alg}>
-                <Button style={styles.button} title="buzina" onPress={() =>navigation.navigate('Natureza')}/>
-                <Button style={styles.button} title="relógio" onPress={() =>navigation.navigate('Objetos')}/>
+                <Button style={styles.button} title="buzina"/>
+                <Button style={styles.button} title="relógio"/>
             </View>
         </View>
-        <Text style={styles.rodape}>Desenvolvido por ManySounds</Text>
+        <Text style={styles.rodape}>Desenvolvido por ManyPixels</Text>
       </View>
     </ScrollView>
     );
@@ -278,18 +276,18 @@ const styles = StyleSheet.create({
     alignItems:'center',
     padding:40,
     zIndex:1,
-    marginTop:-1002
+    marginTop:-1000
   },
   title:{
-    height:40,
-    width:400,
-    padding:40,
-    marginTop:-90
+    height:90,
+    width:550,
+    padding:20,
+    marginTop:-80
   },
   subtitle:{
     color:'white',
     fontSize:20,
-    padding:15,
+    padding:10,
     fontWeight: 'bold',
   },
   button:{
@@ -307,7 +305,7 @@ const styles = StyleSheet.create({
     justifyContent:'space-around',
   },
   rodape:{
-    color:'white',
+    color:'#647687',
     fontSize:20,
     paddingTop:20,
     fontWeight: 'bold',
@@ -323,7 +321,6 @@ const stylesAni = StyleSheet.create({
   back:{
     width:1000,
     height:800,
-    
   },
 });
 
@@ -336,6 +333,5 @@ const stylesObj = StyleSheet.create({
   back:{
     width:1000,
     height:800,
-    
   },
 });
